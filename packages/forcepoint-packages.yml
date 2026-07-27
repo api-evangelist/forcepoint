@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/fp-NGFW-SMC-python/ + https://github.com/Forcepoint
+packages:
+  - language: python
+    registry: pypi
+    name: fp-NGFW-SMC-python
+    version: 1.0.34
+    url: https://pypi.org/project/fp-NGFW-SMC-python/
+    repo: https://github.com/Forcepoint/fp-NGFW-SMC-python
+    install: pip install fp-NGFW-SMC-python
+    license: Apache-2.0
+    summary: Python based API to Forcepoint NGFW Management Center (SMC)
+    official: true
+  - language: python
+    registry: github
+    name: fp-NGFW-SMC-ansible
+    url: https://github.com/Forcepoint/fp-NGFW-SMC-ansible
+    repo: https://github.com/Forcepoint/fp-NGFW-SMC-ansible
+    install: git clone https://github.com/Forcepoint/fp-NGFW-SMC-ansible
+    summary: Ansible modules for Forcepoint NGFW Security Management Center automation
+    official: true
+  - language: hcl
+    registry: github
+    name: terraform-provider-fp-ngfw-smc
+    url: https://github.com/Forcepoint/terraform-provider-fp-ngfw-smc
+    repo: https://github.com/Forcepoint/terraform-provider-fp-ngfw-smc
+    summary: Terraform provider for Forcepoint NGFW Security Management Center (infrastructure-as-code)
+    official: true

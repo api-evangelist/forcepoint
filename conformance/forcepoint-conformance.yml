@@ -1,0 +1,38 @@
+generated: '2026-07-19'
+method: searched
+source: https://help.forcepoint.com/fpone/deploy/rhtml/guid-d35197e0-5924-4838-af15-6298cf9e7b50.html + https://trust.forcepoint.com/
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: Forcepoint Data Security Cloud | SSE REST API authenticates with OAuth 2.0 bearer tokens
+  - id: scim2
+    conforms: true
+    evidence: SSE exposes a SCIM 2.0 config API for user and group provisioning
+  - id: rest-json
+    conforms: true
+    evidence: DLP, SSE, NGFW SMC and Appliance APIs accept and return JSON over HTTP(S)
+  - id: soc2
+    conforms: true
+    evidence: SOC 2 attested (Forcepoint Trust Center)
+  - id: iso27001
+    conforms: true
+    evidence: ISO/IEC 27001 certified (Forcepoint Trust Center)
+  - id: iso27017
+    conforms: true
+    evidence: ISO/IEC 27017 certified (Forcepoint Trust Center)
+  - id: iso27018
+    conforms: true
+    evidence: ISO/IEC 27018 certified (Forcepoint Trust Center)
+  - id: csa-star
+    conforms: true
+    evidence: CSA STAR listed (Forcepoint Trust Center)
+  - id: fips-140
+    conforms: true
+    evidence: FIPS 140 validated cryptographic modules (Forcepoint Trust Center / NGFW)
+  - id: gdpr
+    conforms: true
+    evidence: GDPR compliance documented (Forcepoint Trust Center)
+  - id: fhir-r4
+    conforms: false
+  - id: fapi
+    conforms: false

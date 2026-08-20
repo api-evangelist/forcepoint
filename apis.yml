@@ -58,6 +58,11 @@ apis:
   tags:
   - SSE
   - SCIM
+  - Authentication
+  - Provisioning
+  tags_raw:
+  - SSE
+  - SCIM
   - OAuth
   - Provisioning
   properties:

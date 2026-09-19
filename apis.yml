@@ -113,6 +113,9 @@ apis:
   humanURL: https://help.forcepoint.com/docs/appliance/v85/appliance_api/index.html
   baseURL: https://help.forcepoint.com/docs/appliance/
   tags:
+  - Appliances
+  - Management
+  tags_raw:
   - Appliance
   - Management
   properties:

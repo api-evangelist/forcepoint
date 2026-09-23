@@ -1,0 +1,35 @@
+# Front Door AI Index — forcepoint — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: forcepoint
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: forcepoint.com
+  final_host: www.forcepoint.com
+  ownership: own
+  owner: forcepoint
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 69
+  host_score: 69
+  density: 74.59
+  words: 925
+  tiers:
+    agentic: 13
+    core: 50
+    model: 6
+  ambiguous: 11
+  top_terms:
+    AI: 50
+    agent: 11
+    copilot: 4
+    agentic: 3
+    Bedrock: 2
+    ChatGPT: 2
+    Claude: 2
+    autonomous agent: 2
+    prompts: 2
+    AI assistant: 1
+    MCP: 1

@@ -9,58 +9,6 @@ checked:
 - splunk/integrations/splunk-integration-edges.yml
 marketplace_apps: []
 edges:
-- partner_name: AWS Marketplace
-  partner: amazon-web-services
-  partner_match: aggregator
-  type: marketplace
-  marketplace: aws-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://aws.amazon.com/marketplace/seller-profile?id=e67b339b-74fb-4353-a70f-93807f6550da
-  listing_count: 7
-  apps:
-  - Forcepoint ONE - Web Security Edition
-  - Forcepoint Data Security Posture Management (DSPM)
-  - Forcepoint ONE - Cloud Security Edition
-  - Forcepoint ONE - CASB Cloud App Security
-  - Forcepoint Risk Adaptive Protection
-  seller_name: Forcepoint
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Forcepoint%20LLC
-  listing_count: 4
-  apps:
-  - Forcepoint Email Security v8.5.7
-  - Forcepoint Email Security V8.5.5
-  - Forcepoint Next Generation Firewall
-  - Forcepoint Email Security V8.5.4
-  seller_name: Forcepoint LLC
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Forcepoint
-  listing_count: 1
-  apps:
-  - Forcepoint Email Security V8.5
-  seller_name: Forcepoint
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
 - partner_name: Splunk (own)
   partner: splunk
   partner_match: mirror
@@ -117,5 +65,57 @@ edges:
       latest_authorization: '2020-09-01'
   detected_by: sweep-gov-cloud.py
   first_seen: '2026-10-15'
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=e67b339b-74fb-4353-a70f-93807f6550da
+  listing_count: 7
+  apps:
+  - Forcepoint ONE - Web Security Edition
+  - Forcepoint Data Security Posture Management (DSPM)
+  - Forcepoint ONE - Cloud Security Edition
+  - Forcepoint ONE - CASB Cloud App Security
+  - Forcepoint Cloud Data Loss Prevention (Cloud DLP)
+  seller_name: Forcepoint
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Forcepoint%20LLC
+  listing_count: 4
+  apps:
+  - Forcepoint Email Security v8.5.7
+  - Forcepoint Next Generation Firewall
+  - Forcepoint Email Security V8.5.4
+  - Forcepoint Email Security V8.5.5
+  seller_name: Forcepoint LLC
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-19'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Forcepoint
+  listing_count: 1
+  apps:
+  - Forcepoint Email Security V8.5
+  seller_name: Forcepoint
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 source:
 - splunk/integrations/splunk-integration-edges.yml

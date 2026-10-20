@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/forcepoint-openapi-generated.yml
+vocabulary:
+  name: Forcepoint Domain Vocabulary
+  description: 'Terms declared by Forcepoint''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-20'
+  terms:
+  - term: Dlp
+    definition: 'Resource group in the contract; its operation POST /dlp/rest/v1/auth/access-token: Access Token API for obtaining a JSON Web
+      Token (JWT) for API authentication.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/forcepoint-openapi-generated.yml

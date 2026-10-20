@@ -1,0 +1,6 @@
+name: Forcepoint agent skills
+generated: '2026-10-20'
+method: generated
+skills:
+- name: manage-dlp-policy-rules
+  file: skills/forcepoint-manage-dlp-policy-rules.md

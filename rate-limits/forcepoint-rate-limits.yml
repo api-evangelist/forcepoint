@@ -1,0 +1,7 @@
+name: Forcepoint rate limits
+generated: '2026-10-20'
+method: none
+source: https://help.forcepoint.com/dlp/90/restapi/index.html
+limit_count: 0
+limits: []
+note: No published rate limits found in the DLP REST API guide; the DLP API is served by a self-hosted DLP Manager.

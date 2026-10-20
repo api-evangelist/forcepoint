@@ -1,0 +1,254 @@
+openapi: 3.1.0
+info:
+  title: Forcepoint DLP REST API
+  version: '2026-10-20'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-20: 12 operation(s) read from 5 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Forcepoint has published no machine-readable contract that the
+    pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 5
+    documentation: 8
+    pages-with-code: 4
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-20'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://help.forcepoint.com/dlp/90/restapi/9C4D0BEF-05DE-47BD-B6A9-F8F8C6360D79.html
+  - https://help.forcepoint.com/dlp/90/restapi/CEEF74D1-1171-40D3-ACEE-D7C12DE4F8B8.html
+  - https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+  - https://help.forcepoint.com/dlp/90/restapi/B9942FE6-DD50-4A85-8D8D-0F847E7D9400.html
+  - https://help.forcepoint.com/dlp/90/restapi/54F8A174-ACF2-4D3C-B0CB-CDB2F0E2B1EF.html
+paths:
+  /dlp/rest/v1/auth/access-token:
+    post:
+      operationId: post_dlp_rest_v1_auth_access_token
+      tags:
+      - Dlp
+      summary: Access Token API for obtaining a JSON Web Token (JWT) for API authentication.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/9C4D0BEF-05DE-47BD-B6A9-F8F8C6360D79.html
+      parameters:
+      - name: refresh-token
+        in: header
+        required: true
+        schema:
+          type: string
+        description: Bearer token for refresh
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlp/rest/v1/auth/refresh-token:
+    post:
+      operationId: post_dlp_rest_v1_auth_refresh_token
+      tags:
+      - Dlp
+      summary: Refresh Token API for refreshing authentication tokens.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/9C4D0BEF-05DE-47BD-B6A9-F8F8C6360D79.html
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlp/rest/v1/policy/enabled-names:
+    get:
+      operationId: get_dlp_rest_v1_policy_enabled_names
+      tags:
+      - Dlp
+      summary: Get list of enabled policies.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+      parameters:
+      - name: type
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Policy type
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlp/rest/v1/policy/rules:
+    get:
+      operationId: get_dlp_rest_v1_policy_rules
+      tags:
+      - Dlp
+      summary: Get rules and classifiers.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+      parameters:
+      - name: policyName
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Policy name
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_dlp_rest_v1_policy_rules
+      tags:
+      - Dlp
+      summary: POST /dlp/rest/v1/policy/rules
+      x-source: https://help.forcepoint.com/dlp/90/restapi/B9942FE6-DD50-4A85-8D8D-0F847E7D9400.html
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --insecure --location --request POST \"https://10.0.186.68:9443/dlp/rest/v1/policy/rules\" \n POST rule severity and action\
+          \ API "
+  /dlp/rest/v1/policy/rules/exceptions:
+    get:
+      operationId: get_dlp_rest_v1_policy_rules_exceptions
+      tags:
+      - Dlp
+      summary: Get rule exception details.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+      parameters:
+      - name: type
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Policy type
+      - name: ruleName
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Rule name
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_dlp_rest_v1_policy_rules_exceptions
+      tags:
+      - Dlp
+      summary: POST /dlp/rest/v1/policy/rules/exceptions
+      x-source: https://help.forcepoint.com/dlp/90/restapi/B9942FE6-DD50-4A85-8D8D-0F847E7D9400.html
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --insecure --location --request POST \"https://10.0.186.68:9443/dlp/rest/v1/policy/rules/exceptions\" \n Troubleshooting\
+          \ \n Create and Update Policy APIs \n While exporting and importing policies, \n Same classifier name should exist on the target FSM.\
+          \ \n Resources should exist on the target FSM. Users should have the same email address and other resources like groups and computers\
+          \ should have the s"
+  /dlp/rest/v1/policy/rules/exceptions/all:
+    get:
+      operationId: get_dlp_rest_v1_policy_rules_exceptions_all
+      tags:
+      - Dlp
+      summary: Get list of rule exceptions.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+      parameters:
+      - name: type
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Policy type
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlp/rest/v1/policy/rules/severity-action:
+    get:
+      operationId: get_dlp_rest_v1_policy_rules_severity_action
+      tags:
+      - Dlp
+      summary: Get rule severity and action.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+      parameters:
+      - name: policyName
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Policy name
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_dlp_rest_v1_policy_rules_severity_action
+      tags:
+      - Dlp
+      summary: POST /dlp/rest/v1/policy/rules/severity-action
+      x-source: https://help.forcepoint.com/dlp/90/restapi/B9942FE6-DD50-4A85-8D8D-0F847E7D9400.html
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --insecure --location --request POST \"https://10.0.186.68:9443/dlp/rest/v1/policy/rules/severity-action\" \n POST rule\
+          \ source and destination API "
+  /dlp/rest/v1/policy/rules/source-destination:
+    get:
+      operationId: get_dlp_rest_v1_policy_rules_source_destination
+      tags:
+      - Dlp
+      summary: Get source and destination.
+      x-source: https://help.forcepoint.com/dlp/90/restapi/3CE93266-7D5D-474B-872F-796CFF5718BF.html
+      parameters:
+      - name: policyName
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Policy name
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_dlp_rest_v1_policy_rules_source_destination
+      tags:
+      - Dlp
+      summary: POST /dlp/rest/v1/policy/rules/source-destination
+      x-source: https://help.forcepoint.com/dlp/90/restapi/B9942FE6-DD50-4A85-8D8D-0F847E7D9400.html
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --insecure --location --request POST \"https://10.0.186.68:9443/dlp/rest/v1/policy/rules/source-destination\" \n POST rule\
+          \ exceptions API "
+tags:
+- name: Api
+- name: Dlp
+servers:
+- url: https://{dlpManagerHost}:{dlpManagerPort}
+  description: Self-hosted Forcepoint DLP Manager; docs examples use https://<DLP Manager IP>:<DLP Manager port>/dlp/rest/v1/...
+  variables:
+    dlpManagerHost:
+      default: dlp-manager.example.internal
+    dlpManagerPort:
+      default: '9443'
+components:
+  securitySchemes:
+    ngfw_smc_api_key:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-source: https://help.forcepoint.com/fpone/deploy/rhtml/guid-18f77855-8dc9-436a-9fba-179f06a81066.html
+security:
+- ngfw_smc_api_key: []

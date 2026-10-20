@@ -19,6 +19,10 @@ checked:
 - https://monid.ai/tools/forcepoint
 - https://n8n.io/integrations/forcepoint/
 - https://zapier.com/apps/forcepoint/integrations
+- https://manrs.org/netops/participants/
+- https://www.peeringdb.com/api/fac
+- https://www.peeringdb.com/api/ix
+- https://www.peeringdb.com/api/net
 summary: null
 marketplace_apps: []
 edges:
@@ -159,5 +163,39 @@ edges:
     detected_by: sweep-compliance-assurance.py
     detected: '2026-10-20'
   detected_by: sweep-compliance-assurance.py
+  first_seen: '2026-10-20'
+- partner_name: PeeringDB (interconnection register)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.peeringdb.com/net/1043
+  category: network interconnection register
+  contract_reference:
+    register: PeeringDB (peeringdb.com/api net, ix, fac, org)
+    standard: null
+    spec_file: null
+    role: peeringdb-network
+    registered_name: Forcepoint - AMER
+    register_id: https://www.peeringdb.com/net/1043
+    matched_domain: forcepoint.com
+    matched_by: domain
+    asns:
+    - 7598
+    - 35788
+    - 44444
+    info_types:
+    - Enterprise
+    - NSP
+    ix_presence: 18
+    exchanges_operated: []
+    facilities_operated: 0
+    signal_note: 'participation only: PeeringDB is self-registered by network operators; ASNs, IX presence and facility
+      counts are context, never counted'
+    detected_by: sweep-network-edge.py
+    detected: '2026-10-20'
+  detected_by: sweep-network-edge.py
   first_seen: '2026-10-20'
 templates: []

@@ -185,8 +185,8 @@
     spec_file: null
     role: cc-certified-manufacturer
     registered_name: Forcepoint LLC
-    matched_domain: null
-    matched_by: register-name
+    matched_domain: forcepoint.com
+    matched_by: domain
     certified_products:
     - product: Boundary Protection Devices and Systems
       product_type: Boundary Protection Devices and Systems
@@ -237,10 +237,8 @@
       product counts are context, never counted'
     detected_by: sweep-common-criteria-certified-products.py
     detected: '2026-10-21'
-    register_name_note: register-name 'forcepoint' = forcepoint; no wikidata P856
-    identity_source: register-name
-    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
-      P856 not contradicting (Kin 2026-10-20 decision 2)
+    identity: wikidata Q1934027 'Forcepoint' P856 https://www.forcepoint.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null
 - slug: forcepoint-niap-product-compliant-list-us-ccevs
@@ -259,8 +257,8 @@
     spec_file: null
     role: niap-pcl-vendor
     registered_name: Forcepoint LLC
-    matched_domain: null
-    matched_by: register-name
+    matched_domain: forcepoint.com
+    matched_by: domain
     signal_note: 'certified_products = one entry per NIAP technology type with a Certified (current) or Archived
       (lapsed: true) PCL product, Protection Profiles named; products In Progress are listing only (in_evaluation),
       never certified; product counts are context, never counted'
@@ -303,9 +301,7 @@
       - CPP_ND_V2.2E
       - MOD_CPP_FW_v1.4e
       - MOD_VPNGW_v1.2
-    register_name_note: register-name 'forcepoint' = forcepoint; no wikidata P856
-    identity_source: register-name
-    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
-      P856 not contradicting (Kin 2026-10-20 decision 2)
+    identity: wikidata Q1934027 'Forcepoint' P856 https://www.forcepoint.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null

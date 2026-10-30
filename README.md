@@ -64,6 +64,118 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Forcepoint is a company surfaced as a portfolio company of norwest-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.
+Forcepoint is a data-first cybersecurity vendor whose platform spans Data Loss Prevention (DLP), Security Service Edge / SASE (Forcepoint ONE and Data Security Cloud | SSE), Next-Generation Firewall (NGFW), and web, email, and data security. For developers and security engineers Forcepoint exposes several product REST APIs — DLP policy management, SSE Config/Log/IP and SCIM 2.0 provisioning, the NGFW Security Management Center (SMC) API, and an Appliance management API — documented on help.forcepoint.com. Auth varies by product: OAuth 2.0 bearer tokens for SSE, API-key clients for the NGFW SMC, and basic/session auth for DLP and appliances. Forcepoint publishes official automation tooling including the fp-NGFW-SMC-python SDK (PyPI), Ansible modules, and a Terraform provider, and runs a public status portal and trust center (SOC 2, ISO 27001/27017/27018, CSA STAR, FIPS 140, GDPR).
 
-Backed by: norwest-venture-partners — https://forcepoint.com
+**Areas:** Company · Cybersecurity · Security · Data Loss Prevention · SASE · Security Service Edge · Firewall · Data Security · Cloud Security
+
+## Forcepoint on APIs.io
+
+Everything profiled for Forcepoint is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/forcepoint/](https://apis.io/providers/forcepoint/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Forcepoint Data Security Cloud | SSE REST API](https://apis.io/apis/forcepoint/forcepoint-data-security-cloud-sse-rest-api/) — Config, Log export, and IP APIs plus SCIM 2.0 user/group provisioning for Forcepoint ONE / Data Security Cloud (SSE). OAuth 2.0 bearer authentication with…
+- [Forcepoint DLP REST API](https://apis.io/apis/forcepoint/forcepoint-dlp-rest-api/) — REST API for Forcepoint Data Loss Prevention policy management; JSON over HTTP(S).
+- [Forcepoint NGFW SMC API](https://apis.io/apis/forcepoint/forcepoint-ngfw-smc-api/) — RESTful Security Management Center (SMC) API for Forcepoint Next-Generation Firewall — engines, network elements, and policy automation (JSON/XML). API-key…
+- [Forcepoint Appliance REST API](https://apis.io/apis/forcepoint/forcepoint-appliance-rest-api/) — REST API for managing Forcepoint appliances (basic auth over HTTP(S)).
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Forcepoint API Rules](https://apis.io/rules/forcepoint/forcepoint-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Forcepoint Authentication](https://apis.io/security/forcepoint/forcepoint-authentication/)
+- [Forcepoint Domain Security](https://apis.io/security/forcepoint/forcepoint-domain-security/)
+- [Forcepoint Trust Center](https://apis.io/security/forcepoint/forcepoint-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Forcepoint Plans Pricing](https://apis.io/plans/forcepoint/forcepoint-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Forcepoint Rate Limits](https://apis.io/rate-limits/forcepoint/forcepoint-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://forcepoint.com)
+- [Documentation](https://help.forcepoint.com/)
+- [Getting started](https://help.forcepoint.com/fpone/Interoperability/Getting_started_guide/index.html)
+- [API reference](https://help.forcepoint.com/dlp/90/restapi/index.html)
+- [Pricing](https://www.forcepoint.com/form/pricing-request)
+- [Support](https://support.forcepoint.com/)
+- [Blog](https://www.forcepoint.com/blog)
+- [Security](https://www.forcepoint.com/security/cloud)
+- [Compliance](https://trust.forcepoint.com/)
+- [Terms of service](https://www.forcepoint.com/legal/website-terms-and-conditions)
+- [Privacy policy](https://www.forcepoint.com/company/privacy-policy)
+- [GitHub](https://github.com/Forcepoint)
+- [Status](https://status.forcepoint.com/)
+
+## API Evangelist rating
+
+**Kin Score 58.9** — strong · rubric 0.24.0 · scored 2026-10-20
+
+| Facet | Score |
+|---|---|
+| Discoverability | 80.4 |
+| Contract quality | 39.8 |
+| Contract governance | 80.9 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 66.0 |
+| Access clarity | 60.5 |
+
+**Agent readiness 43.4** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | unknown |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/forcepoint/](https://apis.io/providers/forcepoint/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Forcepoint: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/forcepoint/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
